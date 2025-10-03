@@ -1,0 +1,57 @@
+movie_booking_system/
+│
+├── config/
+│   └── config.php                  # DB connection & constants
+│
+├── auth/
+│   ├── login.php                   # User login
+│   ├── register.php                # User registration
+│   ├── logout.php                  # User logout
+│
+├── frontend/
+│   ├── index.php                   # Homepage (movies + search)
+│   ├── movie_details.php           # Movie info & showtimes
+│   ├── select_seats.php            # Seat selection screen
+│   ├── book_ticket.php             # Handle booking logic
+│   ├── booking_success.php         # Show ticket after booking
+│   ├── cancel_ticket.php           # Cancel booking
+│
+│   ├── dashboard.php               # User dashboard (bookings summary)
+│   ├── bookings.php                # List of bookings
+│   ├── profile.php                 # Profile edit
+│   ├── change_password.php         # Change password
+│   ├── view_ticket.php             # Ticket view/print
+│
+├── admin/
+│   ├── index.php                   # Admin login
+│   ├── dashboard.php               # Admin dashboard
+│   ├── add_movie.php               # Add a movie
+│   ├── manage_movies.php           # View/edit movies
+│   ├── add_theater.php             # Add a theater
+│   ├── manage_theaters.php         # View/edit theaters
+│   ├── add_showtime.php            # Add showtime to a movie
+│   ├── manage_showtimes.php        # View/edit showtimes
+│   ├── manage_bookings.php         # View all bookings
+│
+├── includes/
+│   ├── header.php                  # HTML head & start
+│   ├── footer.php                  # Footer content
+│   ├── navbar.php                  # Dynamic navigation (login/user/menu)
+│   ├── auth_check.php              # Redirects if not logged in
+│   └── functions.php               # Reusable PHP functions
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css               # Main UI styling
+│   ├── js/
+│   │   └── script.js               # Seat selection, alerts, etc.
+│   └── images/
+│       └── movie_posters/          # Uploaded movie images
+│
+├── uploads/
+│   └── movie_posters/              # Upload location
+│
+├── sql/
+│   └── schema.sql                  # Full DB schema
+│
+└── README.md
